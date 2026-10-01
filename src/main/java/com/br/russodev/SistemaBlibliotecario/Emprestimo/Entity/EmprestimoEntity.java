@@ -19,10 +19,12 @@ public class EmprestimoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "livro")
+    @ManyToOne
+    @JoinColumn(name = "leitor_id")
     private LeitorEntity leitor;
 
-    @Column(name = "livro" )
+    @ManyToOne
+    @JoinColumn(name = "livro_id")
     private LivroEntity livro;
 
     @Column(name = "data_emprestimo" )

@@ -27,7 +27,7 @@ public class LivroEntity {
     private LocalDate dataLancamento;
 
     @Column(name = "quantidade")
-    private int qauntidade;
+    private int quantidade;
 
 
 
