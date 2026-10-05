@@ -25,5 +25,7 @@ public class LeitorEntity {
     @OneToMany
     private List<EmprestimoEntity> emprestimo;
 
-
+    public LeitorEntity(String nome) {
+        this.nome = nome;
+    }
 }

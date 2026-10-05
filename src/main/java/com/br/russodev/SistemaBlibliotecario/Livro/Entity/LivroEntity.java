@@ -29,7 +29,10 @@ public class LivroEntity {
     @Column(name = "quantidade")
     private int quantidade;
 
-
-
-
+    public LivroEntity(String titulo, String autor, LocalDate dataLancamento, int quantidade) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.dataLancamento = dataLancamento;
+        this.quantidade = quantidade;
+    }
 }
