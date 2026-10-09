@@ -36,11 +36,9 @@ public class EmprestimoEntity {
     @Column(name = "data_devolucao")
     private LocalDate dataDevolucao;
 
-    public EmprestimoEntity(LeitorEntity leitor, LivroEntity livro, LocalDate dataEmprestimo, LocalDate dataDevolucaoPrevista, LocalDate dataDevolucao) {
+    public EmprestimoEntity(LeitorEntity leitor, LivroEntity livro) {
         this.leitor = leitor;
         this.livro = livro;
-        this.dataEmprestimo = dataEmprestimo;
-        this.dataDevolucaoPrevista = dataDevolucaoPrevista;
-        this.dataDevolucao = dataDevolucao;
+
     }
 }

@@ -8,10 +8,7 @@ public class EmprestimoRequestMapper {
     public EmprestimoEntity toRequest(EmpretimoRequestDto requestDto){
         return new EmprestimoEntity(
                 requestDto.leitor(),
-                requestDto.livro(),
-                requestDto.dataEmprestimo(),
-                requestDto.dataDevolucaoPrevista(),
-                requestDto.dataDevolucao()
+                requestDto.livro()
         );
     }
 

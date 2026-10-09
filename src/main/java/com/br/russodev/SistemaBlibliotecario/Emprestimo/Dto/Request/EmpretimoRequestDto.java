@@ -9,13 +9,7 @@ import java.time.LocalDate;
 public record EmpretimoRequestDto(
          LeitorEntity leitor,
 
-         LivroEntity livro,
-
-         LocalDate dataEmprestimo,
-
-         LocalDate dataDevolucaoPrevista,
-
-         LocalDate dataDevolucao
+         LivroEntity livro
 
 ){
 }
