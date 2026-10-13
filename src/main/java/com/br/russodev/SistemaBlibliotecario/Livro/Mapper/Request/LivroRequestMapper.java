@@ -2,7 +2,9 @@ package com.br.russodev.SistemaBlibliotecario.Livro.Mapper.Request;
 
 import com.br.russodev.SistemaBlibliotecario.Livro.Dto.Request.LivroRequestDto;
 import com.br.russodev.SistemaBlibliotecario.Livro.Entity.LivroEntity;
+import org.springframework.stereotype.Component;
 
+@Component
 public class LivroRequestMapper {
 
     public LivroEntity toRequest(LivroRequestDto livroRequestDto){

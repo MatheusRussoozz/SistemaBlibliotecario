@@ -7,7 +7,6 @@ import com.br.russodev.SistemaBlibliotecario.Leitor.Mapper.Request.LeitorRequest
 import com.br.russodev.SistemaBlibliotecario.Leitor.Mapper.Response.LeitorResponseMapper;
 import com.br.russodev.SistemaBlibliotecario.Leitor.Repository.LeitorRepository;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -42,13 +41,12 @@ public class LeitorService {
         throw new RuntimeException("Leitor de id '" + id + "' não encontrado");
     }
 
-    public Boolean deletarLeitor(Long id){
+    public void deletarLeitor(Long id){
         Optional<LeitorEntity> procurarLeitor = leitorRepository.findById(id);
         if (procurarLeitor.isPresent()){
             leitorRepository.deleteById(id);
-            return true;
         } else {
-            return false;
+            throw new RuntimeException("Leitor não Encontrado");
         }
     }
 

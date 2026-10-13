@@ -3,7 +3,9 @@ package com.br.russodev.SistemaBlibliotecario.Livro.Mapper.Response;
 import com.br.russodev.SistemaBlibliotecario.Livro.Dto.Request.LivroRequestDto;
 import com.br.russodev.SistemaBlibliotecario.Livro.Dto.Response.LivroResponseDto;
 import com.br.russodev.SistemaBlibliotecario.Livro.Entity.LivroEntity;
+import org.springframework.stereotype.Component;
 
+@Component
 public class LivroResponseMapper {
 
     public LivroResponseDto toResponse(LivroEntity livroEntity){

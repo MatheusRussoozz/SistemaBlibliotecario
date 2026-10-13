@@ -3,6 +3,9 @@ package com.br.russodev.SistemaBlibliotecario.Emprestimo.Mapper.Response;
 import com.br.russodev.SistemaBlibliotecario.Emprestimo.Dto.Request.EmpretimoRequestDto;
 import com.br.russodev.SistemaBlibliotecario.Emprestimo.Dto.Response.EmprestimoResponseDto;
 import com.br.russodev.SistemaBlibliotecario.Emprestimo.Entity.EmprestimoEntity;
+import org.springframework.stereotype.Component;
+
+@Component
 
 public class EmprestimoResponseMapper {
 

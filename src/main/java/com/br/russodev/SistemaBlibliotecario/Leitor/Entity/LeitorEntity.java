@@ -22,7 +22,7 @@ public class LeitorEntity {
     @Column(name = "nome")
     private String nome;
 
-    @OneToMany
+    @OneToMany(mappedBy = "leitor")
     private List<EmprestimoEntity> emprestimo;
 
     public LeitorEntity(String nome) {

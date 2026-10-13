@@ -3,6 +3,9 @@ package com.br.russodev.SistemaBlibliotecario.Leitor.Mapper.Response;
 import com.br.russodev.SistemaBlibliotecario.Leitor.Dto.Request.LeitorRequestDto;
 import com.br.russodev.SistemaBlibliotecario.Leitor.Dto.Response.LeitorResponseDto;
 import com.br.russodev.SistemaBlibliotecario.Leitor.Entity.LeitorEntity;
+import org.springframework.stereotype.Component;
+
+@Component
 
 public class LeitorResponseMapper {
 
