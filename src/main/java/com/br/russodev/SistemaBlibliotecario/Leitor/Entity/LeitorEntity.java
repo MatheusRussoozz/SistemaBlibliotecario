@@ -13,6 +13,7 @@ import java.util.Scanner;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Table(name = "tb_leitor")
 public class LeitorEntity {
 
     @Id

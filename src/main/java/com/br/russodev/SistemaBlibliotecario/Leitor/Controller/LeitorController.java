@@ -47,7 +47,7 @@ public class LeitorController {
                 .body(leitorService.listarLeitorPorId(id));
     }
 
-    @DeleteMapping("/deletarLeitor")
+    @DeleteMapping("/deletarLeitor/{id}")
     public ResponseEntity<?> deletarLeitor(@PathVariable Long id){
         leitorService.deletarLeitor(id);
         return ResponseEntity

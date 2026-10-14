@@ -23,6 +23,7 @@ public class LeitorService {
 
     public LeitorResponseDto criarLeitor(LeitorRequestDto leitorRequestDto){
         LeitorEntity leitorEntity = leitorRequestMapper.toRequest(leitorRequestDto);
+        leitorRepository.save(leitorEntity);
         return leitorResponseMapper.toResponse(leitorEntity);
     }
 

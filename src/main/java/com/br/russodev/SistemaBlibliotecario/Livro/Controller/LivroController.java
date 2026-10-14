@@ -38,7 +38,7 @@ public class LivroController {
                 .body(livroBuscado);
     }
 
-    @DeleteMapping("/deletarlivro")
+    @DeleteMapping("/deletarlivro/{id}")
     public ResponseEntity<?> deletarLeitor(@PathVariable Long id){
         livroService.deletarLivro(id);
         return ResponseEntity
